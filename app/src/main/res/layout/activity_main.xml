@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/dashboardbackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/brand_name"
+            android:text="Transact"
+            android:layout_marginTop="10dp"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:fontFamily="serif-monospace"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tag_line"
+            android:layout_marginTop="10dp"
+            android:text="Making billing easy for you..."
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brand_name"
+            android:textStyle="normal"/>
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/client_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></LinearLayout>
+
+
+</LinearLayout>
